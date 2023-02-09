@@ -1,0 +1,42 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Agence{% endblock %}
+
+{% block body %}
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Agence</th>
+      <th scope="col">Titre</th>
+      <th scope="col">Adresse</th>
+      <th scope="col">Ville</th>
+      <th scope="col">CP</th>
+      <th scope="col">Description</th>
+      <th scope="col">Photo</th>
+      <th scope="col">Actions</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+<form method="POST">
+    <input type="text" placeholder="titre" name="titre">
+    <input type="text" placeholder="adresse" name="adresse">
+    <input type="text" placeholder="ville" name="ville">
+    <input type="text" placeholder="code postal" name="cp">
+    <input type="text" placeholder="description" name="description">
+    <input type="text" placeholder="photo" name="photo">
+    <button name="valider_agence">Enregistrer</button>
+</form>
+{% endblock %}
